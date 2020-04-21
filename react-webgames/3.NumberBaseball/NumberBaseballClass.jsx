@@ -21,7 +21,6 @@ class NumberBaseballClass extends Component {
 
   onSubmitForm = (e) => {
     const { value, answer, tries } = this.state;
-    console.log("submit");
     e.preventDefault();
     if (value === answer.join("")) {
       this.setState((prevState) => {
